@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BUKAA BLEEEK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px; /* Padding lebih kecil untuk HP */
+            font-size: 14px; /* Ukuran font lebih kecil */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 20px auto; /* Margin lebih kecil */
+            width: 90%; /* Lebar lebih besar untuk HP */
+            max-width: 200px; /* Batas maksimum lebih kecil */
+            display: inline-block;
+        }
+
+        /* Untuk layar tablet (≥600px) */
+        @media (min-width: 600px) {
+            button {
+                padding: 12px 25px;
+                font-size: 15px;
+                width: 70%;
+                max-width: 300px;
+            }
+        }
+
+        /* Untuk layar desktop (≥1024px) */
+        @media (min-width: 1024px) {
+            button {
+                padding: 15px 30px;
+                font-size: 16px;
+                width: 40%;
+                max-width: 400px;
+            }
+        }
+
+        button:hover {
+            background-color: #ff85c1;
+        }
+
+        img {
+            display: none;
+            margin: 20px auto; /* Margin lebih kecil */
+            max-width: 100%; /* Gambar responsif */
+            width: 250px; /* Ukuran default lebih kecil */
+            height: auto; /* Tinggi otomatis */
+        }
+
+        h1 {
+            font-family: monospace;
+            font-size: 18px; /* Ukuran font lebih kecil untuk HP */
+            margin: 10px 0; /* Margin lebih kecil */
+        }
+
+        h6 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px; /* Ukuran font lebih kecil */
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Untuk layar tablet (≥600px) */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+            h6 {
+                font-size: 14px;
+            }
+            img {
+                width: 300px;
+            }
+        }
+
+        /* Untuk layar desktop (≥1024px) */
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 24px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+            img {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SEMANGAT KESA SABAR, JANGAN CAPE CAPE YA....</h1>
+    <h1>BUKA DARI ATAS KEBAWAH</h1>
+    <h1>YIPIII</h1>
+    <button onclick="toggleGambar('gambar')">POV KESA NUNGGU DC WALDOS</button>
+    <br>
+    <img id="gambar" src="1.jpg" alt="Gambar"> 
+    
+    <button onclick="toggleGambar('gambar1')">POV KESA BACA BUKU</button>
+    <br>
+    <img id="gambar1" src="2.jpg" alt="Gambar"> 
+    
+    <button onclick="toggleGambar('gambar4')">POV KESA DENGERIN LAGU</button>
+    <br>
+    <img id="gambar4" src="4.jpg" alt="Gambar"> 
+
+    <button onclick="toggleGambar('gambar3')">BAAAAAA</button>
+    <br>
+    <img id="gambar3" src="3.jpg" alt="Gambar"> 
+
+    <button onclick="toggleGambar('bunga')">BUKAA INIIII EHHEHEH</button>
+    <br>
+    <img id="bunga" src="bunga.jpg" alt="Gambar"> 
+
+    <button onclick="toggleGambar('fight')">TERAKHIR WEHEHWHEHEW</button>
+    <br>
+    <img id="fight" src="fight.jpg" alt="Gambar"> 
+
+    <h6>MADE BY AQILLA</h6>
+    <script>
+        function toggleGambar(id) {
+            let gambar = document.getElementById(id);
+            if (gambar.style.display === 'none' || gambar.style.display === '') {
+                gambar.style.display = 'block';
+            } else {
+                gambar.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
